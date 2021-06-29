@@ -1,0 +1,56 @@
+
+
+<div class="card p-2 col-6">
+  <div class="card-body">
+
+    <h3 [hidden]="!erValgt(0)">Bra valg!</h3>
+    <img [src]="twilight.imageURL"
+    width="350"
+    height="500"/>
+
+    <br>
+    <br>
+
+    <button
+    class="btn btn-primary"
+    (click)="stemKnapp(0)"
+    style="flex: 1"
+    >{{hentTekstKnapp(0)}}</button>  
+    
+  </div>
+</div>
+
+
+  <div style="margin:25px">
+    <h3 [hidden]="!erValgt(1)">Helt riktig, denne serien suger.</h3>
+    <img [src]="trueBlood.imageURL"
+    width="350"
+    height="500"/>
+    <br>
+    <button
+    (click)="stemKnapp(1)">{{hentTekstKnapp(1)}}</button>
+  </div>
+
+  <div style="margin:25px">
+    <h3 [hidden]="!erValgt(2)">hhaahahahhahaah den er faktisk bra</h3>
+    <img [src]="whatWeDoInTheShadows.imageURL"
+    width="350"
+    height="500"/>
+    <br>
+    <button
+    (click)="stemKnapp(2)">{{hentTekstKnapp(2)}}</button>
+  </div>
+
+  <div style="margin:25px">
+    <h3 [hidden]="!erValgt(3)">LOL</h3>
+    <img [src]="letTheRightOneIn.imageURL"
+    width="350"
+    height="500"/>
+    <br>
+    <button
+    (click)="stemKnapp(3)">{{hentTekstKnapp(3)}}</button>
+  </div>
+
+
+
+
